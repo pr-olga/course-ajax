@@ -34,8 +34,7 @@
         unsplashRequest.onload = addImage;
         unsplashRequest.open('GET', `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}`);
 
-        unsplashRequest.setRequestHeader('Authorization', 'Client-ID {api-key}');
-        unsplashRequest.send();
+    unsplashRequest.setRequestHeader('Authorization', 'Client-ID {api-key}');   unsplashRequest.send();
 
         function addImage() {
             let htmlContent = '';
